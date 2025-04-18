@@ -179,12 +179,12 @@ function showCards() {
 
   //for search bar
   const filteredStudios = studios.filter(studio => {
-    const matchesSearchQuery =  studio.name.toLowerCase().includes(searchQuery) ||
-                                studio.location.toLowerCase().includes(searchQuery) ||
-                                studio.address.toLowerCase().includes(searchQuery) ||
-                                studio.phone.toLowerCase().includes(searchQuery) ||
-                                studio.price.toLowerCase().includes(searchQuery)||
-                                studio.discounts.toLowerCase().includes(searchQuery);
+    const matchesSearchQuery =  studio.name?.toLowerCase().includes(searchQuery) ||
+                                studio.location?.toLowerCase().includes(searchQuery) ||
+                                studio.address?.toLowerCase().includes(searchQuery) ||
+                                studio.phone?.toLowerCase().includes(searchQuery) ||
+                                studio.price?.toLowerCase().includes(searchQuery)||
+                                studio.discounts?.toLowerCase().includes(searchQuery);
       
 
   const matchesPriceFilter = filterByPriceRange(studio.price);
