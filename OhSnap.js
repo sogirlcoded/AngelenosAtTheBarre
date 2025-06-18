@@ -271,5 +271,6 @@ function feelingLucky() {
 function leaveFeedback() {
     console.log("Button Clicked!");
     const googleForm = "https://docs.google.com/forms/d/e/1FAIpQLSfPG3n6DMinW0f485cuKeEZQ6cG2Hhxyaum1iX7xUF2FuirtQ/viewform?usp=dialog";
-    window.location.href = googleForm;
+    // window.location.href = googleForm;
+    window.open(googleForm);
 }
